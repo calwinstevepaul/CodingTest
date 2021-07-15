@@ -1,0 +1,419 @@
+{
+	"info": {
+		"_postman_id": "681a17fc-6651-4b2e-9439-af2ab93089e2",
+		"name": "Stocks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getStocks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/stocks/nse?name=&_id=",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"stocks",
+						"nse"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": ""
+						},
+						{
+							"key": "_id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getStocks - All data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/stocks/nse?name=&_id=",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"stocks",
+								"nse"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": ""
+								},
+								{
+									"key": "_id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7223"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c37-1rlKtrmOHFZQiqYtcrL18BZ/08g\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 10:09:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"60efed3fad94886e50157e26\",\n        \"name\": \"Bhansali Engg.\",\n        \"currentMarketPrice\": 158.25,\n        \"marketCap\": 2625.46,\n        \"stockPE\": 7.86,\n        \"dividendYield\": 0.63,\n        \"roce\": 86.18,\n        \"roePreviousAnnum\": 20.21,\n        \"debtToEquity\": 0,\n        \"eps\": 20.13,\n        \"reserves\": 664.76,\n        \"debt\": 0\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e27\",\n        \"name\": \"Coal India\",\n        \"currentMarketPrice\": 147.45,\n        \"marketCap\": 90869.43,\n        \"stockPE\": 7.13,\n        \"dividendYield\": 8.48,\n        \"roce\": 73.08,\n        \"roePreviousAnnum\": 74.9,\n        \"debtToEquity\": 0.13,\n        \"eps\": 20.69,\n        \"reserves\": 30920.81,\n        \"debt\": 4808.98\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e28\",\n        \"name\": \"IOL Chemicals\",\n        \"currentMarketPrice\": 617.15,\n        \"marketCap\": 3623.01,\n        \"stockPE\": 7.88,\n        \"dividendYield\": 0.65,\n        \"roce\": 68.87,\n        \"roePreviousAnnum\": 69.54,\n        \"debtToEquity\": 0.02,\n        \"eps\": 78.78,\n        \"reserves\": 1036.08,\n        \"debt\": 24.55\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e29\",\n        \"name\": \"Dolat Investment\",\n        \"currentMarketPrice\": 72.5,\n        \"marketCap\": 1276,\n        \"stockPE\": 8.7,\n        \"dividendYield\": 0.21,\n        \"roce\": 59.64,\n        \"roePreviousAnnum\": 38.37,\n        \"debtToEquity\": 0.31,\n        \"eps\": 8.34,\n        \"reserves\": 346.11,\n        \"debt\": 114.32\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e2a\",\n        \"name\": \"NDTV\",\n        \"currentMarketPrice\": 79.8,\n        \"marketCap\": 514.51,\n        \"stockPE\": 7.26,\n        \"dividendYield\": 0,\n        \"roce\": 52.92,\n        \"roePreviousAnnum\": 27.17,\n        \"debtToEquity\": 0.45,\n        \"eps\": 11,\n        \"reserves\": 125.88,\n        \"debt\": 68.27\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e2b\",\n        \"name\": \"Balmer Law. Inv.\",\n        \"currentMarketPrice\": 480.25,\n        \"marketCap\": 1066.16,\n        \"stockPE\": 12.57,\n        \"dividendYield\": 7.81,\n        \"roce\": 49.81,\n        \"roePreviousAnnum\": 48.39,\n        \"debtToEquity\": 0,\n        \"eps\": 38.21,\n        \"reserves\": 153.22,\n        \"debt\": 0\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e2c\",\n        \"name\": \"Ebixcash World\",\n        \"currentMarketPrice\": 681.25,\n        \"marketCap\": 758.09,\n        \"stockPE\": 14.63,\n        \"dividendYield\": 0,\n        \"roce\": 43.76,\n        \"roePreviousAnnum\": -1.04,\n        \"debtToEquity\": 0.2,\n        \"eps\": 46.58,\n        \"reserves\": 156.64,\n        \"debt\": 32.81\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e2d\",\n        \"name\": \"Mangalam Organic\",\n        \"currentMarketPrice\": 706.5,\n        \"marketCap\": 605.08,\n        \"stockPE\": 8.79,\n        \"dividendYield\": 0.14,\n        \"roce\": 43.65,\n        \"roePreviousAnnum\": 78.9,\n        \"debtToEquity\": 0,\n        \"eps\": 75.66,\n        \"reserves\": 180.64,\n        \"debt\": 0.47\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e2e\",\n        \"name\": \"INEOS Styrolut.\",\n        \"currentMarketPrice\": 1321.75,\n        \"marketCap\": 2324.96,\n        \"stockPE\": 8.3,\n        \"dividendYield\": 0,\n        \"roce\": 43.41,\n        \"roePreviousAnnum\": 4.27,\n        \"debtToEquity\": 0.09,\n        \"eps\": 159.35,\n        \"reserves\": 871.19,\n        \"debt\": 78.25\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e2f\",\n        \"name\": \"Expleo Solutions\",\n        \"currentMarketPrice\": 620.45,\n        \"marketCap\": 636.12,\n        \"stockPE\": 12.61,\n        \"dividendYield\": 0,\n        \"roce\": 39.24,\n        \"roePreviousAnnum\": 27.41,\n        \"debtToEquity\": 0,\n        \"eps\": 49.2,\n        \"reserves\": 191.61,\n        \"debt\": 0\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e30\",\n        \"name\": \"Sh. Jagdamba Pol\",\n        \"currentMarketPrice\": 637.65,\n        \"marketCap\": 558.45,\n        \"stockPE\": 13.65,\n        \"dividendYield\": 0.04,\n        \"roce\": 38.3,\n        \"roePreviousAnnum\": 34.66,\n        \"debtToEquity\": 0.28,\n        \"eps\": 46.71,\n        \"reserves\": 131.9,\n        \"debt\": 37.21\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e31\",\n        \"name\": \"Godawari Power\",\n        \"currentMarketPrice\": 955.9,\n        \"marketCap\": 3368.23,\n        \"stockPE\": 5.28,\n        \"dividendYield\": 0.52,\n        \"roce\": 37.04,\n        \"roePreviousAnnum\": 13.65,\n        \"debtToEquity\": 0.42,\n        \"eps\": 181.17,\n        \"reserves\": 2001.48,\n        \"debt\": 852.45\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e32\",\n        \"name\": \"Cigniti Tech.\",\n        \"currentMarketPrice\": 422.9,\n        \"marketCap\": 1184.97,\n        \"stockPE\": 11.25,\n        \"dividendYield\": 0.59,\n        \"roce\": 36.36,\n        \"roePreviousAnnum\": 58.18,\n        \"debtToEquity\": 0.12,\n        \"eps\": 37.6,\n        \"reserves\": 344.33,\n        \"debt\": 45.67\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e33\",\n        \"name\": \"Kirl. Ferrous\",\n        \"currentMarketPrice\": 245.2,\n        \"marketCap\": 3392.94,\n        \"stockPE\": 11.23,\n        \"dividendYield\": 0.82,\n        \"roce\": 34.58,\n        \"roePreviousAnnum\": 16.36,\n        \"debtToEquity\": 0.21,\n        \"eps\": 21.84,\n        \"reserves\": 930.2,\n        \"debt\": 213.83\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e34\",\n        \"name\": \"Rites\",\n        \"currentMarketPrice\": 246.7,\n        \"marketCap\": 5928.25,\n        \"stockPE\": 13.67,\n        \"dividendYield\": 6.49,\n        \"roce\": 34.27,\n        \"roePreviousAnnum\": 20.25,\n        \"debtToEquity\": 0.01,\n        \"eps\": 17.51,\n        \"reserves\": 2451.95,\n        \"debt\": 33.48\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e35\",\n        \"name\": \"Guj.St.Petronet\",\n        \"currentMarketPrice\": 272.05,\n        \"marketCap\": 15349.37,\n        \"stockPE\": 9.76,\n        \"dividendYield\": 0.74,\n        \"roce\": 34.25,\n        \"roePreviousAnnum\": 35.23,\n        \"debtToEquity\": 0.37,\n        \"eps\": 27.88,\n        \"reserves\": 4926.22,\n        \"debt\": 2037.96\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e36\",\n        \"name\": \"Ester Industries\",\n        \"currentMarketPrice\": 143.5,\n        \"marketCap\": 1196.7,\n        \"stockPE\": 8.42,\n        \"dividendYield\": 1.74,\n        \"roce\": 33.27,\n        \"roePreviousAnnum\": 27.52,\n        \"debtToEquity\": 0.33,\n        \"eps\": 17.04,\n        \"reserves\": 474.91,\n        \"debt\": 172.54\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e37\",\n        \"name\": \"Anjani Portland\",\n        \"currentMarketPrice\": 305.1,\n        \"marketCap\": 771.47,\n        \"stockPE\": 9.08,\n        \"dividendYield\": 1.64,\n        \"roce\": 32.69,\n        \"roePreviousAnnum\": 15.65,\n        \"debtToEquity\": 0.01,\n        \"eps\": 33.61,\n        \"reserves\": 321.02,\n        \"debt\": 2.8\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e38\",\n        \"name\": \"Venky's (India)\",\n        \"currentMarketPrice\": 2298.75,\n        \"marketCap\": 3238.33,\n        \"stockPE\": 12.1,\n        \"dividendYield\": 0,\n        \"roce\": 32.05,\n        \"roePreviousAnnum\": -3.23,\n        \"debtToEquity\": 0.16,\n        \"eps\": 190.06,\n        \"reserves\": 1090.33,\n        \"debt\": 177.82\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e39\",\n        \"name\": \"Heritage Foods\",\n        \"currentMarketPrice\": 341.05,\n        \"marketCap\": 1582.4,\n        \"stockPE\": 10.61,\n        \"dividendYield\": 0.73,\n        \"roce\": 31.7,\n        \"roePreviousAnnum\": -25.44,\n        \"debtToEquity\": 0.06,\n        \"eps\": 32.16,\n        \"reserves\": 572.63,\n        \"debt\": 35.98\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e3a\",\n        \"name\": \"SIS\",\n        \"currentMarketPrice\": 393.8,\n        \"marketCap\": 5844.57,\n        \"stockPE\": 10.17,\n        \"dividendYield\": 0.51,\n        \"roce\": 31.66,\n        \"roePreviousAnnum\": 17.09,\n        \"debtToEquity\": 0.64,\n        \"eps\": 24.64,\n        \"reserves\": 1756.61,\n        \"debt\": 1164.56\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e3b\",\n        \"name\": \"GTPL Hathway\",\n        \"currentMarketPrice\": 146.4,\n        \"marketCap\": 1646.46,\n        \"stockPE\": 8.75,\n        \"dividendYield\": 2.05,\n        \"roce\": 31.53,\n        \"roePreviousAnnum\": 16.5,\n        \"debtToEquity\": 0.16,\n        \"eps\": 16.73,\n        \"reserves\": 767.67,\n        \"debt\": 140.96\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e3c\",\n        \"name\": \"Welspun Corp\",\n        \"currentMarketPrice\": 144.75,\n        \"marketCap\": 3777.24,\n        \"stockPE\": 7.02,\n        \"dividendYield\": 7.25,\n        \"roce\": 29.6,\n        \"roePreviousAnnum\": -1.53,\n        \"debtToEquity\": 0.11,\n        \"eps\": 20.64,\n        \"reserves\": 3256.75,\n        \"debt\": 365.75\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e3d\",\n        \"name\": \"I G Petrochems\",\n        \"currentMarketPrice\": 598.8,\n        \"marketCap\": 1844,\n        \"stockPE\": 9.78,\n        \"dividendYield\": 0.33,\n        \"roce\": 29.58,\n        \"roePreviousAnnum\": 3.14,\n        \"debtToEquity\": 0.15,\n        \"eps\": 61.08,\n        \"reserves\": 791.2,\n        \"debt\": 125.94\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e3e\",\n        \"name\": \"Geojit Fin. Ser.\",\n        \"currentMarketPrice\": 68,\n        \"marketCap\": 1621.07,\n        \"stockPE\": 13.16,\n        \"dividendYield\": 2.21,\n        \"roce\": 29.12,\n        \"roePreviousAnnum\": 9.65,\n        \"debtToEquity\": 0.06,\n        \"eps\": 5.17,\n        \"reserves\": 568.14,\n        \"debt\": 36.47\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e3f\",\n        \"name\": \"Sasken Technol.\",\n        \"currentMarketPrice\": 971.8,\n        \"marketCap\": 1462.64,\n        \"stockPE\": 12.77,\n        \"dividendYield\": 3.09,\n        \"roce\": 28.84,\n        \"roePreviousAnnum\": 13.22,\n        \"debtToEquity\": 0,\n        \"eps\": 76.11,\n        \"reserves\": 549.5,\n        \"debt\": 0\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e40\",\n        \"name\": \"Engineers India\",\n        \"currentMarketPrice\": 84.15,\n        \"marketCap\": 4729.59,\n        \"stockPE\": 13.76,\n        \"dividendYield\": 6.12,\n        \"roce\": 28.78,\n        \"roePreviousAnnum\": 15.73,\n        \"debtToEquity\": 0,\n        \"eps\": 5.44,\n        \"reserves\": 2119.81,\n        \"debt\": 3.57\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e41\",\n        \"name\": \"Petronet LNG\",\n        \"currentMarketPrice\": 236.2,\n        \"marketCap\": 35430,\n        \"stockPE\": 13.25,\n        \"dividendYield\": 5.29,\n        \"roce\": 28.14,\n        \"roePreviousAnnum\": 22.26,\n        \"debtToEquity\": 0.28,\n        \"eps\": 17.83,\n        \"reserves\": 9990.19,\n        \"debt\": 3218.22\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e42\",\n        \"name\": \"Saksoft\",\n        \"currentMarketPrice\": 508.4,\n        \"marketCap\": 533.31,\n        \"stockPE\": 11.74,\n        \"dividendYield\": 0.89,\n        \"roce\": 26.35,\n        \"roePreviousAnnum\": 20.16,\n        \"debtToEquity\": 0.14,\n        \"eps\": 43.32,\n        \"reserves\": 196.24,\n        \"debt\": 28.46\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e43\",\n        \"name\": \"Polyplex Corpn\",\n        \"currentMarketPrice\": 1187.2,\n        \"marketCap\": 3726.91,\n        \"stockPE\": 7.28,\n        \"dividendYield\": 12.38,\n        \"roce\": 26.3,\n        \"roePreviousAnnum\": 8.67,\n        \"debtToEquity\": 0.25,\n        \"eps\": 163.04,\n        \"reserves\": 2996.69,\n        \"debt\": 758\n    }\n]"
+				},
+				{
+					"name": "getStocks - searching as \"india\"",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/stocks/nse?name=india&_id=",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"stocks",
+								"nse"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "india"
+								},
+								{
+									"key": "_id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "732"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2dc-g9hlujH9e9rWjhUV84q+yId2ib4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 11:31:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"60efed3fad94886e50157e27\",\n        \"name\": \"Coal India\",\n        \"currentMarketPrice\": 147.45,\n        \"marketCap\": 90869.43,\n        \"stockPE\": 7.13,\n        \"dividendYield\": 8.48,\n        \"roce\": 73.08,\n        \"roePreviousAnnum\": 74.9,\n        \"debtToEquity\": 0.13,\n        \"eps\": 20.69,\n        \"reserves\": 30920.81,\n        \"debt\": 4808.98\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e38\",\n        \"name\": \"Venky's (India)\",\n        \"currentMarketPrice\": 2298.75,\n        \"marketCap\": 3238.33,\n        \"stockPE\": 12.1,\n        \"dividendYield\": 0,\n        \"roce\": 32.05,\n        \"roePreviousAnnum\": -3.23,\n        \"debtToEquity\": 0.16,\n        \"eps\": 190.06,\n        \"reserves\": 1090.33,\n        \"debt\": 177.82\n    },\n    {\n        \"_id\": \"60efed3fad94886e50157e40\",\n        \"name\": \"Engineers India\",\n        \"currentMarketPrice\": 84.15,\n        \"marketCap\": 4729.59,\n        \"stockPE\": 13.76,\n        \"dividendYield\": 6.12,\n        \"roce\": 28.78,\n        \"roePreviousAnnum\": 15.73,\n        \"debtToEquity\": 0,\n        \"eps\": 5.44,\n        \"reserves\": 2119.81,\n        \"debt\": 3.57\n    }\n]"
+				},
+				{
+					"name": "getStocks - with ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/stocks/nse?name=&_id=60efed3fad94886e50157e27",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"stocks",
+								"nse"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": ""
+								},
+								{
+									"key": "_id",
+									"value": "60efed3fad94886e50157e27"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "245"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f5-N20x2MbS+1/RXlkIFfCFTzbDYxc\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 11:32:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"60efed3fad94886e50157e27\",\n        \"name\": \"Coal India\",\n        \"currentMarketPrice\": 147.45,\n        \"marketCap\": 90869.43,\n        \"stockPE\": 7.13,\n        \"dividendYield\": 8.48,\n        \"roce\": 73.08,\n        \"roePreviousAnnum\": 74.9,\n        \"debtToEquity\": 0.13,\n        \"eps\": 20.69,\n        \"reserves\": 30920.81,\n        \"debt\": 4808.98\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"Batman\",\r\n    \"password\":\"iambatman\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/auth/login",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"Batman\",\r\n    \"password\":\"iambatman\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/auth/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "260"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"104-5U0cYdQafookxEuW6MnynmzpxmU\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 11:28:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Batman\",\n    \"id\": \"60f00f68b408a66208207fdf\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjAwZjY4YjQwOGE2NjIwODIwN2ZkZiIsImlhdCI6MTYyNjM0ODUzMiwiZXhwIjoxNjI2MzUyMTMyfQ.pNU8P97SuKP_EzZCbAT8CbLESq3DHjbX5865vuqbrAk\",\n    \"message\": \"login successful\"\n}"
+				},
+				{
+					"name": "login - no such user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"\",\r\n    \"password\":\"iambatman\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/auth/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c-7t5gmXqLgMzAuqLtbdep5K4e9vg\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 11:33:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "No Such User"
+				},
+				{
+					"name": "login - wrong password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"Batman\",\r\n    \"password\":\"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/auth/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "14"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e-VLnY0sJyygEsJNVnkRrUIPRDzwg\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 11:34:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Wrong Password"
+				}
+			]
+		}
+	]
+}
